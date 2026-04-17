@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>STUDIO | House on the Clouds Inspired</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-secondary-container": "#656464",
+                        "on-background": "#1a1c1c",
+                        "primary-fixed": "#fcdfad",
+                        "surface-container": "#eeeeee",
+                        "secondary-fixed": "#e5e2e1",
+                        "on-primary-fixed-variant": "#57441f",
+                        "inverse-primary": "#dec393",
+                        "error-container": "#ffdad6",
+                        "primary": "#705b34",
+                        "on-secondary-fixed": "#1c1b1b",
+                        "tertiary-fixed": "#f3e0c2",
+                        "tertiary-fixed-dim": "#d6c4a7",
+                        "on-tertiary-fixed": "#231a07",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-container": "#4e422c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-secondary-fixed-variant": "#474646",
+                        "background": "#f9f9f9",
+                        "tertiary": "#6a5d45",
+                        "surface-bright": "#f9f9f9",
+                        "surface-dim": "#dadada",
+                        "primary-container": "#c8ae80",
+                        "inverse-on-surface": "#f1f1f1",
+                        "surface-container-low": "#f3f3f3",
+                        "on-secondary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "surface": "#f9f9f9",
+                        "tertiary-container": "#c0af93",
+                        "outline": "#7e766a",
+                        "on-primary-container": "#54411d",
+                        "on-tertiary-fixed-variant": "#51452f",
+                        "on-primary": "#ffffff",
+                        "error": "#ba1a1a",
+                        "on-error": "#ffffff",
+                        "on-surface": "#1a1c1c",
+                        "secondary-container": "#e5e2e1",
+                        "surface-tint": "#705b34",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-variant": "#e2e2e2",
+                        "surface-container-highest": "#e2e2e2",
+                        "inverse-surface": "#2f3131",
+                        "on-surface-variant": "#4d463b",
+                        "secondary": "#5f5e5e",
+                        "outline-variant": "#cfc5b7",
+                        "surface-container-high": "#e8e8e8",
+                        "primary-fixed-dim": "#dec393",
+                        "on-primary-fixed": "#261900"
+                    },
+                    fontFamily: {
+                        "headline": ["Noto Serif"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .no-line-rule {
+            border: none !important;
+        }
+
+        body {
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .cinematic-scrubber {
+            height: 2px;
+            background: rgba(200, 174, 128, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cinematic-scrubber::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 40%;
+            background: #705b34;
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface font-body selection:bg-primary-container selection:text-on-primary-container">
+    <!-- TopNavBar -->
+    <nav
+        class="fixed top-0 w-full z-50 bg-black/15 flex justify-between items-center px-4 md:px-12 py-4 md:py-6 no-line-rule">
+        <div class="hidden md:flex items-center gap-8">
+            <a class="text-stone-500 dark:text-stone-400 font-['Noto_Serif'] text-sm tracking-widest uppercase hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-500 border-b border-yellow-800/20 text-yellow-800"
+                href="#">Photography</a>
+            <a class="text-stone-500 dark:text-stone-400 font-['Noto_Serif'] text-sm tracking-widest uppercase hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-500"
+                href="#">Films</a>
+            <a class="text-stone-500 dark:text-stone-400 font-['Noto_Serif'] text-sm tracking-widest uppercase hover:text-stone-900 dark:hover:text-stone-100 transition-colors duration-500"
+                href="#">Editorial</a>
+        </div>
+        <div class="md:hidden flex items-center">
+            <span id="hamburger-menu"
+                class="material-symbols-outlined text-stone-300 text-stone-300 cursor-pointer">menu</span>
+        </div>
+        <div
+            class="text-xl md:text-2xl font-['Noto_Serif'] tracking-tighter text-stone-900 dark:text-stone-100 font-bold">
+            STUDIO
+        </div>
+        <div class="flex items-center gap-4 md:gap-8">
+            <div class="hidden md:flex gap-4">
+                <span
+                    class="material-symbols-outlined text-on-surface/60 cursor-pointer hover:text-primary transition-colors">camera</span>
+                <span
+                    class="material-symbols-outlined text-on-surface/60 cursor-pointer hover:text-primary transition-colors">movie</span>
+            </div>
+            <button
+                class="bg-primary text-on-primary px-4 md:px-8 py-2 md:py-3 text-[10px] md:text-xs tracking-widest uppercase font-label transition-transform active:scale-95 duration-300">
+                Contact
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-white/40 dark:bg-stone-950/95 z-[60] flex flex-col items-center justify-center space-y-8 backdrop-blur-md opacity-0 pointer-events-none transition-opacity duration-300">
+        <span id="close-menu"
+            class="material-symbols-outlined absolute top-6 right-6 text-3xl cursor-pointer text-stone-900 dark:text-stone-100 hover:text-primary transition-colors">close</span>
+        <a class="text-3xl font-headline tracking-widest uppercase text-stone-900 dark:text-stone-100 hover:text-primary transition-colors duration-300"
+            href="#">Photography</a>
+        <a class="text-3xl font-headline tracking-widest uppercase text-stone-900 dark:text-stone-100 hover:text-primary transition-colors duration-300"
+            href="#">Films</a>
+        <a class="text-3xl font-headline tracking-widest uppercase text-stone-900 dark:text-stone-100 hover:text-primary transition-colors duration-300"
+            href="#">Editorial</a>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative h-screen w-full overflow-hidden">
+        <img alt="1" class="absolute inset-0 w-full h-full object-cover grayscale-[20%] brightness-75"
+            data-alt="Cinematic wide shot of a couple standing in a misty mountain landscape at dawn, soft golden light hitting their silhouettes"
+            src="10.jpg" />
+        <div class="absolute inset-0 flex flex-col items-center justify-center text-white text-center space-y-6">
+            <h1 class="font-headline text-7xl md:text-9xl tracking-tighter font-bold">A R D</h1>
+            <p class="font-label tracking-[0.5em] text-sm uppercase opacity-80">Capture the Ethereal</p>
+        </div>
+        <!-- Cinematic Scrubber -->
+        <div class="absolute bottom-0 left-0 w-full">
+            <div class="cinematic-scrubber"></div>
+        </div>
+    </header>
+    <!-- Introduction Section -->
+    <section
+        class="py-16 md:py-32 px-4 md:px-12 max-w-screen-2xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-10 md:gap-16 items-center">
+        <div class="md:col-span-5 aspect-[3/4] overflow-hidden">
+            <img alt="2" class="w-full h-full object-cover"
+                data-alt="Elegant portrait of a bride in a high-fashion white gown standing against a minimalist brutalist architecture background"
+                src="1.jpg" />
+        </div>
+        <div class="md:col-span-7 space-y-8">
+            <h2 class="font-headline text-4xl md:text-6xl leading-tight text-on-surface-variant">
+                A MODERN APPROACH <br />
+                <span class="italic font-normal">to an age old tradition</span>
+            </h2>
+            <div class="max-w-md space-y-6">
+                <p class="text-secondary font-body leading-relaxed">
+                    We believe in the power of the quiet moments. The stolen glances, the gentle touch, and the
+                    unscripted laughter that defines a lifetime. Our vision is to curate these memories into a visual
+                    legacy that transcends time.
+                </p>
+                <div class="flex flex-wrap gap-8 opacity-40 grayscale pt-8">
+                    <span class="font-headline text-xl font-bold italic">VOGUE</span>
+                    <span class="font-headline text-xl font-bold tracking-tight">COSMOPOLITAN</span>
+                    <span class="font-headline text-xl font-bold">BRIDES</span>
+                    <span class="font-headline text-xl font-bold">BAZAAR</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Masonry Gallery Title -->
+    <div class="text-center py-10 md:py-20 px-4 bg-surface-container-low">
+        <h3 class="font-headline text-xs tracking-[0.3em] uppercase text-primary mb-2">Portfolio Selection</h3>
+        <h2 class="font-headline text-4xl md:text-5xl">ICONIC wedding images</h2>
+    </div>
+    <!-- Masonry Gallery -->
+    <section class="p-4 grid grid-cols-2 md:grid-cols-4 gap-4 bg-surface-container-low">
+        <div class="space-y-4">
+            <div class="aspect-[4/5] overflow-hidden">
+                <img alt="3" class="w-full h-full object-cover"
+                    data-alt="Black and white candid shot of a couple laughing under a veil, high contrast editorial style"
+                    src="2.jpg" />
+            </div>
+            <div class="aspect-square overflow-hidden">
+                <img alt="4" class="w-full h-full object-cover"
+                    data-alt="Close up of ornate wedding jewelry resting on a marble surface with soft natural light"
+                    src="3.jpg" />
+            </div>
+        </div>
+        <div class="space-y-4 pt-12">
+            <div class="aspect-[3/4] overflow-hidden">
+                <img alt="5" class="w-full h-full object-cover"
+                    data-alt="Architectural shot of a wedding venue at dusk with symmetrical lighting and a lonely figure"
+                    src="4.jpg" />
+            </div>
+            <div class="aspect-[4/5] overflow-hidden">
+                <img alt="6" class="w-full h-full object-cover"
+                    data-alt="Groom getting ready in a dark wood paneled room with dramatic chiaroscuro lighting"
+                    src="5.jpg" />
+            </div>
+        </div>
+        <div class="space-y-4">
+            <div class="aspect-square overflow-hidden">
+                <img alt="7" class="w-full h-full object-cover"
+                    data-alt="Wide angle shot of an outdoor wedding ceremony with floral installations and a sunset sky"
+                    src="6.jpg" />
+            </div>
+            <div class="aspect-[4/5] overflow-hidden">
+                <img alt="8" class="w-full h-full object-cover"
+                    data-alt="A couple walking away through a meadow with long golden grass at sunset"
+                    src="7.jpg" />
+            </div>
+        </div>
+        <div class="space-y-4 pt-8">
+            <div class="aspect-[3/4] overflow-hidden">
+                <img alt="9" class="w-full h-full object-cover"
+                    data-alt="High angle shot of a bride's train spreading across a minimalist stone floor"
+                    src="8.jpg" />
+            </div>
+            <div class="aspect-square overflow-hidden">
+                <img alt="10" class="w-full h-full object-cover"
+                    data-alt="Candid moment of bridesmaids helping the bride with her dress in a sunlit room"
+                    src="9.jpg" />
+            </div>
+        </div>
+    </section>
+    <!-- Photography Blog Section -->
+    <section class="py-16 md:py-32 px-4 md:px-12">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-screen-2xl mx-auto">
+            <div class="space-y-6 group cursor-pointer">
+                <div class="aspect-[2/3] overflow-hidden bg-surface-container">
+                    <img alt="11"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Couple in traditional Indian wedding attire standing before a lake at dawn"
+                        src="11.jpg" />
+                </div>
+                <div class="space-y-1">
+                    <h4 class="font-headline text-2xl uppercase tracking-tighter">Reva &amp; Zach</h4>
+                    <p class="font-label text-xs tracking-widest text-secondary uppercase">Mumbai, Oct 7, 2024</p>
+                </div>
+            </div>
+            <div class="space-y-6 group cursor-pointer pt-16">
+                <div class="aspect-[2/3] overflow-hidden bg-surface-container">
+                    <img alt="12"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Intimate close up of a couple holding hands during a desert wedding ceremony"
+                        src="15.jpg" />
+                </div>
+                <div class="space-y-1">
+                    <h4 class="font-headline text-2xl uppercase tracking-tighter">Ananya &amp; Karan</h4>
+                    <p class="font-label text-xs tracking-widest text-secondary uppercase">Udaipur, Sept 22, 2024</p>
+                </div>
+            </div>
+            <div class="space-y-6 group cursor-pointer">
+                <div class="aspect-[2/3] overflow-hidden bg-surface-container">
+                    <img alt="13"
+                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                        data-alt="Cinematic wide shot of a couple standing on a coastal cliff at dusk"
+                        src="12.jpg" />
+                </div>
+                <div class="space-y-1">
+                    <h4 class="font-headline text-2xl uppercase tracking-tighter">Sara &amp; Kabir</h4>
+                    <p class="font-label text-xs tracking-widest text-secondary uppercase">Goa, Aug 14, 2024</p>
+                </div>
+            </div>
+        </div>
+        <div class="mt-24 text-center">
+            <button
+                class="border-b-2 border-primary pb-2 font-headline text-xl text-primary hover:text-on-surface hover:border-on-surface transition-colors duration-500">
+                Photography Blog
+            </button>
+        </div>
+    </section>
+    <!-- Soul Cinema Section -->
+    <section
+        class="bg-on-background py-20 md:py-40 px-4 md:px-12 text-center text-surface-container-lowest overflow-hidden relative">
+        <div class="absolute top-0 left-0 w-full overflow-hidden leading-none z-10">
+           <svg viewBox="0 0 1000 100" preserveAspectRatio="none" class="w-full h-24">
+  <polygon points="0,0 1000,0 1000,60 500,100 0,60" class="fill-[#d6cec3]"></polygon>
+</svg>
+        </div>
+        <div class="absolute inset-0 opacity-20 pointer-events-none">
+            <img alt="14" class="w-full h-full object-cover"
+                data-alt="Grainy film texture overlay with subtle light leaks and cinematic shadows"
+                src="13.jpg" />
+        </div>
+        <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none z-10 rotate-180">
+            <svg viewBox="0 0 500 100" preserveAspectRatio="none" class="w-full h-24">
+                <polygon points="0,0 500,0 500,70 250,100 0,70" class="fill-[#d6cec3]"></polygon>
+            </svg>
+        </div>
+        <div class="relative z-10 space-y-8 max-w-4xl mx-auto">
+            <h2 class="font-headline text-6xl md:text-9xl tracking-[0.1em] font-bold">SOUL CINEMA</h2>
+            <p class="font-body text-lg md:text-2xl font-light leading-relaxed max-w-2xl mx-auto opacity-70 italic">
+                Capturing the rhythm of love through cinematic storytelling. We don't just film weddings; we document
+                legacies of the soul.
+            </p>
+        </div>
+    </section>
+    <!-- Award Winning Films Section -->
+    <section class="py-16 md:py-32 bg-surface">
+        <div class="max-w-screen-2xl mx-auto px-4 md:px-12">
+            <div class="text-center mb-24 space-y-12">
+                <h3 class="font-headline text-3xl uppercase tracking-widest">AWARD WINNING FILMS</h3>
+                <div class="flex justify-center gap-12 opacity-30">
+                    <div class="flex flex-col items-center">
+                        <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                        <span class="text-[10px] uppercase tracking-widest mt-2">CANNES 2023</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                        <span class="text-[10px] uppercase tracking-widest mt-2">VENICE 2024</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="material-symbols-outlined text-4xl">workspace_premium</span>
+                        <span class="text-[10px] uppercase tracking-widest mt-2">SUNDANCE 2022</span>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-24">
+                <div class="space-y-8 group">
+                    <div class="aspect-video relative overflow-hidden bg-black">
+                        <img alt="15"
+                            class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
+                            data-alt="Stunning cinematic frame from a wedding film showing a couple dancing in a grand ballroom with candlelight"
+                            src="14.jpg" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-6xl text-white/50 group-hover:text-white transition-colors duration-300">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-headline text-3xl">Love in Second Innings</h4>
+                        <p class="text-secondary leading-relaxed max-w-md">A poignant journey of rediscovering love in
+                            the golden years of life. A cinematic masterpiece documented over three years.</p>
+                    </div>
+                </div>
+                <div class="space-y-8 group pt-16">
+                    <div class="aspect-video relative overflow-hidden bg-black">
+                        <img alt="16"
+                            class="w-full h-full object-cover opacity-80 group-hover:scale-105 transition-transform duration-1000"
+                            data-alt="Emotional film still of a father walking his daughter down the aisle in a sun-drenched forest"
+                            src="15.jpg" />
+                        <div class="absolute inset-0 flex items-center justify-center">
+                            <span
+                                class="material-symbols-outlined text-6xl text-white/50 group-hover:text-white transition-colors duration-300">play_circle</span>
+                        </div>
+                    </div>
+                    <div class="space-y-4">
+                        <h4 class="font-headline text-3xl">Twenty Years in the Making</h4>
+                        <p class="text-secondary leading-relaxed max-w-md">The story of childhood sweethearts
+                            celebrating two decades of togetherness with a vow renewal in the Swiss Alps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Wedding Collections Grid -->
+    <section class="py-24 px-4 bg-surface-container-low">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-screen-2xl mx-auto">
+            <div class="relative group cursor-pointer aspect-square overflow-hidden">
+                <img alt="17" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Wedding film thumbnail: Tamanna and Dan laughing in a vintage convertible car"
+                    src="16.jpg" />
+                <div
+                    class="absolute inset-0 bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span class="font-headline text-white text-xl uppercase tracking-widest">Tamanna &amp; Dan</span>
+                </div>
+            </div>
+            <div class="relative group cursor-pointer aspect-square overflow-hidden">
+                <img alt="18" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Wedding film thumbnail: Alisha and Rahul under a rain of flower petals"
+                    src="17.jpg" />
+                <div
+                    class="absolute inset-0 bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span class="font-headline text-white text-xl uppercase tracking-widest">Alisha &amp; Rahul</span>
+                </div>
+            </div>
+            <div class="relative group cursor-pointer aspect-square overflow-hidden">
+                <img alt="19" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Wedding film thumbnail: Saloni and Sid sharing a quiet moment in a library"
+                    src="18.jpg" />
+                <div
+                    class="absolute inset-0 bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span class="font-headline text-white text-xl uppercase tracking-widest">Saloni &amp; Sid</span>
+                </div>
+            </div>
+            <div class="relative group cursor-pointer aspect-square overflow-hidden">
+                <img alt="20" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    data-alt="Wedding film thumbnail: Zina and Zain standing on a rooftop at twilight"
+                    src="19.jpg" />
+                <div
+                    class="absolute inset-0 bg-black/40 flex items-end p-8 opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                    <span class="font-headline text-white text-xl uppercase tracking-widest">Zina &amp; Zain</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Work & Publications -->
+    <section class="py-16 md:py-32 px-4 md:px-12 bg-white">
+        <div class="max-w-screen-2xl mx-auto">
+            <h3 class="font-headline text-xs tracking-[0.4em] uppercase text-center mb-16 text-secondary">As Seen In
+            </h3>
+            <div
+                class="flex flex-wrap justify-between items-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="w-32 aspect-[3/4] bg-stone-100 flex items-center justify-center font-headline font-bold">
+                    VOGUE</div>
+                <div class="w-32 aspect-[3/4] bg-stone-100 flex items-center justify-center font-headline font-bold">
+                    BRIDES</div>
+                <div class="w-32 aspect-[3/4] bg-stone-100 flex items-center justify-center font-headline font-bold">
+                    ELLE</div>
+                <div class="w-32 aspect-[3/4] bg-stone-100 flex items-center justify-center font-headline font-bold">
+                    HARPER'S</div>
+                <div class="w-32 aspect-[3/4] bg-stone-100 flex items-center justify-center font-headline font-bold">
+                    GRAZIA</div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-32">
+                <div class="space-y-6 group">
+                    <div class="aspect-video overflow-hidden">
+                        <img alt="21"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            data-alt="Film feature: Prerna and Neelabh's wedding in a medieval Italian castle"
+                            src="20.jpg" />
+                    </div>
+                    <h5 class="font-headline text-xl tracking-widest uppercase">PRERNA &amp; NEELABH</h5>
+                </div>
+                <div class="space-y-6 group pt-20">
+                    <div class="aspect-video overflow-hidden">
+                        <img alt="22"
+                            class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                            data-alt="Film feature: Esheta and Sarthak's modern minimal wedding in Tokyo"
+                            src="21.jpg" />
+                    </div>
+                    <h5 class="font-headline text-xl tracking-widest uppercase">ESHETA &amp; SARTHAK</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="bg-stone-50 dark:bg-stone-950 border-t border-stone-200/10 no-line-rule">
+        <div
+            class="flex flex-col md:flex-row justify-between items-center px-4 md:px-12 py-10 md:py-20 w-full max-w-screen-2xl mx-auto">
+            <div class="space-y-6 text-center md:text-left mb-12 md:mb-0">
+                <div class="text-lg font-['Noto_Serif'] text-stone-900 dark:text-stone-100 font-bold tracking-tighter">
+                    STUDIO
+                </div>
+                <p class="font-['Inter'] text-xs tracking-[0.2em] uppercase text-stone-400">
+                    MUMBAI / BANGALORE
+                </p>
+                <div class="space-y-2">
+                    <p class="font-['Inter'] text-xs tracking-[0.2em] text-stone-400">HELLO@STUDIO.COM</p>
+                    <p class="font-['Inter'] text-xs tracking-[0.2em] text-stone-400">+91 98765 43210</p>
+                </div>
+            </div>
+            <div class="flex flex-col items-center md:items-end space-y-8">
+                <div class="flex gap-8">
+                    <a class="text-stone-400 font-['Inter'] text-xs tracking-[0.2em] uppercase hover:text-yellow-800 transition-all duration-300 opacity-80 hover:opacity-100"
+                        href="#">Instagram</a>
+                    <a class="text-stone-400 font-['Inter'] text-xs tracking-[0.2em] uppercase hover:text-yellow-800 transition-all duration-300 opacity-80 hover:opacity-100"
+                        href="#">Vimeo</a>
+                    <a class="text-stone-400 font-['Inter'] text-xs tracking-[0.2em] uppercase hover:text-yellow-800 transition-all duration-300 opacity-80 hover:opacity-100"
+                        href="#">Mail</a>
+                    <a class="text-stone-400 font-['Inter'] text-xs tracking-[0.2em] uppercase hover:text-yellow-800 transition-all duration-300 opacity-80 hover:opacity-100"
+                        href="#">Inquiry</a>
+                </div>
+                <p class="font-['Inter'] text-[10px] tracking-[0.2em] uppercase text-stone-400 opacity-50">
+                    © STUDIO. MUMBAI / BANGALORE
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const hamburger = document.getElementById('hamburger-menu');
+        const closeMenu = document.getElementById('close-menu');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        if (hamburger && closeMenu && mobileMenu) {
+            hamburger.addEventListener('click', () => {
+                mobileMenu.classList.remove('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.add('opacity-100', 'pointer-events-auto');
+            });
+            closeMenu.addEventListener('click', () => {
+                mobileMenu.classList.add('opacity-0', 'pointer-events-none');
+                mobileMenu.classList.remove('opacity-100', 'pointer-events-auto');
+            });
+        }
+    </script>
+</body>
+
+</html>
